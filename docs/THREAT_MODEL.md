@@ -84,6 +84,8 @@ Every arrow crossing a boundary needs: authentication, integrity, input validati
 | T16 | I | Stolen device key extracted from flash | A2 | ESP32 flash encryption + secure boot (Phase 8); revoke on loss | Documented residual risk |
 | T17 | E | Leaked CI/cloud credentials | A7 | OIDC federation instead of long-lived keys, gitleaks, least-privilege IAM | Secret-scan gate |
 | T18 | T | Vulnerable dependency / base image | All | pip-audit, Trivy, pinned versions, Dependabot | CI gate |
+| T19 | I | Precise coordinates leak into reverse-proxy access logs via query strings | A1 | Keep location out of URLs, scrub logs, log only device ID and status code | Log-scrubbing unit test; grep Loki for lat/lon patterns || T19 | I | Precise coordinates leak into reverse-proxy access logs via query strings | A1 | Keep location out of URLs, scrub logs, log only device ID and status code | Log-scrubbing unit test; grep Loki for lat/lon patterns |
+
 
 ## 6. Risk ranking (initial, before mitigation)
 
