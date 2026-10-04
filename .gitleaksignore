@@ -1,0 +1,3 @@
+# AWS's published example key, used in docs/PHASE0_SETUP.md to demo the scanner.
+# Not a real credential. Do not add other entries without a written justification.
+docs/PHASE0_SETUP.md:aws-access-token:85
